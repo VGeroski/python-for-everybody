@@ -1,0 +1,16 @@
+CREATE TABLE Users(
+  name VARCHAR(128),
+  email VARCHAR(128)
+);
+
+INSERT INTO Users(name, email) VALUES ('Chuck', 'chuck@umich.edu');
+INSERT INTO Users(name, email) VALUES ('Sally', 'sally@umich.edu');
+INSERT INTO Users(name, email) VALUES ('Vlada', 'vlada@uni.kg.edu');
+INSERT INTO Users(name, email) VALUES ('Kristin', 'kf@umich.edu');
+
+DELETE FROM Users WHERE email='kf@umich.edu';
+
+UPDATE Users SET name='Charles' WHERE email='chuck@umich.edu';
+
+SELECT * FROM Users ORDER BY email;
+SELECT * FROM Users WHERE email='chuck@umich.edu';
