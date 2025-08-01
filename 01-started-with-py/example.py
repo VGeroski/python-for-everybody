@@ -128,5 +128,6 @@ while True:
     tot = tot + fval
 
 print('All Done')
+print()
 print(tot, num, tot/num)
 
